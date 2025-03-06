@@ -40,6 +40,10 @@ class Deck {
     public boolean sameCard(Card c1, Card c2) {
         return c1.getSuit().equals(c2.getSuit());
     }
-
+	
+	// Method to check if two cards have the same rank
+    public boolean compareCard(Card c1, Card c2) {
+        return c1.getRank().equals(c2.getRank());
+    }
 
 }
