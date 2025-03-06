@@ -23,6 +23,7 @@ class Deck {
 	void printDeck() {
 		for(Card card : deck) {
 			System.out.println(card);
+			System.out.println("Deck shuffled.");
 		}
 	}
 	
@@ -57,7 +58,14 @@ class Deck {
         System.out.println("Card not found.");
     }
 	
-	
+	// Method to deal 5 random cards
+    public void dealCard() {
+        Collections.shuffle(deck);
+        System.out.println("Dealt 5 random cards:");
+        for (int i = 0; i < 5; i++) {
+            System.out.println(deck.get(i));
+        }
+    }
 	
 	
 
