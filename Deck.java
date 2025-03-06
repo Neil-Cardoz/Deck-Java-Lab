@@ -36,7 +36,10 @@ class Deck {
 		System.out.println("The cards is "+deck.get(1));
 	}
 	
-
+	 // Method to check if two cards belong to the same suit
+    public boolean sameCard(Card c1, Card c2) {
+        return c1.getSuit().equals(c2.getSuit());
+    }
 
 
 }
