@@ -1,3 +1,9 @@
+// Main.java
+//Name - Neil Cardoz	
+//PRN - 23070126079	
+//Batch - AIML B1
+
+
 import java.util.Scanner;
 
 public class Main {
