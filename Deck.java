@@ -45,5 +45,20 @@ class Deck {
     public boolean compareCard(Card c1, Card c2) {
         return c1.getRank().equals(c2.getRank());
     }
+	
+	// Method to find and print a specific card
+    public void findCard(String rank, String suit) {
+        for (Card card : deck) {
+            if (card.getRank().equals(rank) && card.getSuit().equals(suit)) {
+                System.out.println("Card found: " + card);
+                return;
+            }
+        }
+        System.out.println("Card not found.");
+    }
+	
+	
+	
+	
 
 }
