@@ -29,6 +29,14 @@ class Deck {
 	public void shuffleDeck(){
 		Collections.shuffle(deck);
 	}
+	
+	// Print 1 randomcard from the deck
+	public void printCard(){
+		Collections.shuffle(deck);
+		System.out.println("The cards is "+deck.get(1));
+	}
+	
+
 
 
 }
